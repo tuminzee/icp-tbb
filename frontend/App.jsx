@@ -10,14 +10,7 @@ import "@connect2ic/core/style.css"
 /*
  * Import canister definitions like this:
  */
-import * as counter from "../.dfx/local/canisters/counter"
 import * as nft from "../.dfx/local/canisters/nft"
-/*
- * Some examples to get you started
- */
-import { Counter } from "./components/Counter"
-import { Transfer } from "./components/Transfer"
-import { Profile } from "./components/Profile"
 import { NFT } from "./components/NFT"
 
 function App() {
@@ -37,13 +30,7 @@ function App() {
         </p>
       </header>
 
-      {/* <p className="examples-title">
-        Examples
-      </p> */}
       <div>
-        {/* <Counter /> */}
-        {/* <Profile /> */}
-        {/* <Transfer /> */}
         <NFT />
       </div>
 
@@ -51,15 +38,9 @@ function App() {
   )
 }
 
-
-// console.log({
-//   defaultProviders
-// })
-
 const client = createClient({
   canisters: {
     nft,
-    counter
   },
   providers: defaultProviders,
   globalProviderConfig: {

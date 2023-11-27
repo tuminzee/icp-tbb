@@ -112,3 +112,44 @@ button {
         opacity: 0;
     }
 }
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .withInput {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
